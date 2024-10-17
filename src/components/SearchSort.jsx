@@ -12,11 +12,11 @@ function SearchSort() {
       <Input
         placeholder="Search products..."
         onChange={(e) => dispatch(setSearchTerm(e.target.value))}
-        className="flex-grow sm:w-80 w-36"
+        className="flex-grow sm:w-80 w-36 outline-none"
       />
       <div className="flex gap-2">
       <Select onValueChange={(value) => dispatch(setSortBy(value))}>
-        <SelectTrigger className="sm:w-[120px] w-24">
+        <SelectTrigger className="sm:w-[120px] w-24 shadow">
           <SelectValue placeholder="Sort by" />
         </SelectTrigger>
         <SelectContent>
@@ -25,7 +25,7 @@ function SearchSort() {
         </SelectContent>
       </Select>
       <Select onValueChange={(value) => dispatch(setSortOrder(value))}>
-        <SelectTrigger className="sm:w-[120px] w-24">
+        <SelectTrigger className="sm:w-[120px] w-24 shadow">
           <SelectValue placeholder="Sort order" />
         </SelectTrigger>
         <SelectContent>

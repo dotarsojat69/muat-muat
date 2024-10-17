@@ -36,7 +36,7 @@ function EditProdukDialog() {
       stock: parseInt(data.stock),
     }));
     dispatch(closeEditDialog());
-    toast("Product edited successfully")
+    toast("Product edited successfully");
   };
 
   return (
