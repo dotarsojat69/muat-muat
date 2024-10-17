@@ -1,5 +1,5 @@
 import React from 'react'
-import ProdukSearch from './ProdukSearch'
+import SearchSort from './SearchSort'
 
 const Navbar = () => {
 
@@ -8,8 +8,9 @@ const Navbar = () => {
         <h2 className='text-sm sm:text-xl font-semibold py-2 text-black'>
         G-Shop
         </h2>
+        
 
-        <ProdukSearch />
+        <SearchSort />
 
     </div>
   )
