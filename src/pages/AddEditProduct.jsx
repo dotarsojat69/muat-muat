@@ -7,6 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { FaPlus } from 'react-icons/fa';
 import { addProduct } from '@/store/productSlice';
+import { toast } from 'sonner';
 
 function AddEditProduk() {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ function AddEditProduk() {
       stock: parseInt(data.stock),
     }));
     form.reset();
+    toast("Product has been added successfully")
   };
 
   return (

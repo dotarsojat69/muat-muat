@@ -5,6 +5,7 @@ import ProdukList from "./pages/ProductList"
 import Navbar from "./components/Navbar"
 import EditProdukDialog from "./components/EditProductDialog"
 import DeleteProdukDialog from "./components/DeleteProductDialog"
+import { Toaster } from "./components/ui/sonner"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <AddEditProduk />
       </div>
       </div>
+      <Toaster />
     </Provider>
   );
 }

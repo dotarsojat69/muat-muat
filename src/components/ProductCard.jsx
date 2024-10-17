@@ -1,8 +1,8 @@
 import React from 'react'
-import { FaEdit, FaTrash } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
 import { Card, CardContent, CardFooter } from './ui/card'
 import { Button } from './ui/button'
+import { FaEdit, FaTrash } from 'react-icons/fa'
 import { openDeleteDialog, openEditDialog } from '@/store/productSlice'
 
 function ProdukCard ({ product }) {
