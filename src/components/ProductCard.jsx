@@ -20,7 +20,7 @@ function ProdukCard ({ product }) {
       <Card className="w-full max-w-sm">
         <CardContent className="p-4">
           <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
-          <p className="text-gray-600 mb-2">Price: ${product.price.toFixed(2)}</p>
+          <p className="text-gray-600 mb-2">Price: Rp {product.price.toFixed(2)}</p>
           <p className="text-gray-600">Stock: {product.stock}</p>
         </CardContent>
         <CardFooter className="flex justify-end space-x-2 p-4">
