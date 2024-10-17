@@ -14,10 +14,10 @@ const App = () => {
         
         <div className="space-y-6">
         
-        <AddEditProduk />
         <ProdukList />
         <EditProdukDialog />
         <DeleteProdukDialog />
+        <AddEditProduk />
       </div>
       </div>
     </Provider>
