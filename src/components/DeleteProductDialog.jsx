@@ -10,6 +10,7 @@ import { AlertDialog,
 } from './ui/alert-dialog';
 import { useDispatch, useSelector } from 'react-redux';
 import { closeDeleteDialog, deleteProduct } from '@/store/productSlice';
+import { toast } from 'sonner';
 
 const DeleteProdukDialog = () => {
     const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const DeleteProdukDialog = () => {
     const handleDelete = () => {
       dispatch(deleteProduct(productIdToDelete));
       dispatch(closeDeleteDialog());
+      toast("Product deleted successfully")
     };
   
     return (

@@ -4,19 +4,16 @@ import { Card, CardContent, CardFooter } from './ui/card'
 import { Button } from './ui/button'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 import { openDeleteDialog, openEditDialog } from '@/store/productSlice'
-import { toast } from 'sonner'
 
 function ProdukCard ({ product }) {
     const dispatch = useDispatch();
 
     const handleEdit = () => {
         dispatch(openEditDialog(product));
-        toast("Product edited successfully")
       };
     
       const handleDelete = () => {
         dispatch(openDeleteDialog(product.id));
-        toast("Product deleted successfully")
       };
 
     return (
